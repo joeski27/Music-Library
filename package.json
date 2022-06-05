@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
-   , "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "start-dev": "nodemon -r dotenv/config index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/joeski27/Music-Library#readme",
   "devDependencies": {
+    "dotenv": "^16.0.1",
     "eslint": "^8.17.0",
     "nodemon": "^2.0.16"
   },
